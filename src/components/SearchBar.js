@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Form extends Component {
+class SearchBar extends Component {
   // Setting the component's initial state
   state = {
     firstName: "",
@@ -34,7 +34,7 @@ class Form extends Component {
     return (
       <div>
         <p>
-          Hello {this.state.firstName} {this.state.lastName}
+         
         </p>
         <form className="form">
           <input
@@ -53,9 +53,13 @@ class Form extends Component {
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
+
+
+        You searched: {this.state.firstName} {this.state.lastName}
+
       </div>
     );
   }
 }
 
-export default Form;
+export default SearchBar;
