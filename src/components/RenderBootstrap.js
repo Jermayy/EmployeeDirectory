@@ -1,4 +1,6 @@
 import React from "react";
+import SearchBar from './SearchBar'
+
 
 function RenderBootstrap() {
 
@@ -11,6 +13,8 @@ function RenderBootstrap() {
     <p className="lead">Search your employee database below:</p>
   </div>
 </div>
+
+<SearchBar/>
 
 <table class="table">
   <thead class="thead-dark">
