@@ -1,8 +1,6 @@
 import React from 'react';
 
 
-
-
 const useSortableData = (employees, config = null)=>{
     const [sortConfig, setSortConfig] = React.useState(null);
 
@@ -35,8 +33,6 @@ const useSortableData = (employees, config = null)=>{
 };
 
 
-
-
   const Table = props =>{     
 
     const { employees, requestSort, sortConfig } = useSortableData(props.employees);
@@ -55,11 +51,11 @@ return (
     <table className="table">
   <thead className="thead-dark">
     <tr>
-      < th scope="col"> <button onClick={() => requestSort('id')} className={getClassNamesFor('id')}> Employee ID </button></th>
-      <th scope="col"> <button onClick={() => requestSort('firstName')} className={getClassNamesFor('firstName')}>First Name </button></th>
-      <th scope="col"> <button onClick={() => requestSort('lastName')} className={getClassNamesFor('lastName')}>Last Name </button> </th>
-      <th scope="col"> <button onClick={() => requestSort('department')}className={getClassNamesFor('department')}>Department </button></th>
-      <th scope="col"> <button onClick={() => requestSort('email')} className={getClassNamesFor('email')}>Email </button></th>
+      < th scope="col"> <button className="btn" onClick={() => requestSort('id')} className={getClassNamesFor('id')}> Employee ID </button></th>
+      <th scope="col"> <button className="btn" onClick={() => requestSort('firstName')} className={getClassNamesFor('firstName')}>First Name </button></th>
+      <th scope="col"> <button className="btn" onClick={() => requestSort('lastName')} className={getClassNamesFor('lastName')}>Last Name </button> </th>
+      <th scope="col"> <button className="btn" onClick={() => requestSort('department')}className={getClassNamesFor('department')}>Department </button></th>
+      <th scope="col"> <button className="btn" onClick={() => requestSort('email')} className={getClassNamesFor('email')}>Email </button></th>
     </tr>
   </thead>
   <tbody>
@@ -79,12 +75,7 @@ return (
         )
    
       })}      
-  {/* <td>{props.firstName} </td>
-        <td>{props.lastName} </td>
-        <td>{props.department} </td>
-        <td>{props.email} </td>
-         */}
-    
+   
     
   </tbody>
 </table>
@@ -93,12 +84,4 @@ return (
 }
 
 
-
 export default Table;
-
-
-// function Table(props){
-//     return <div className="table">{props.children}</div>
-// }
-
-// export default Table;
