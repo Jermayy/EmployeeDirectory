@@ -19,7 +19,7 @@ Within the Terminal type "npm i" or "npm install" to install dependencies to run
 ## Usage:
 to run the application locally type "npm start" into your Terminal. Alternatively a live deployed version of the application can be accessed here:  https://jermayy.github.io/EmployeeDirectory/
 
-![](/screenshots/1.png)
+![](/screenshots/2.png)
 
 
 ## License Details:  
@@ -36,4 +36,7 @@ none
 https://github.com/Jermayy  
  Email me at:  
 jeremyVDLRC@gmail.com  
-for additional questions
+for additional questions 
+
+
+
