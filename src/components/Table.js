@@ -4,18 +4,9 @@ import Row from './Row';
 
 
 
-  function Table (){
+  function Table (){     
 
-    const employeeResults = sampleEmployees.map(employee =>{
-        return <Row
-        id= {employee.id}
-        firstName= {employee.firstName}
-        lastName= {employee.lastName}
-        department= {employee.department}
-        email= {employee.email} />
-      })
-      
-
+  
 
 return (
 <div>
@@ -30,9 +21,27 @@ return (
     </tr>
   </thead>
   <tbody>
-        
-   {employeeResults}  
-        
+
+  {sampleEmployees.map(employee =>{
+      return(
+      
+      <tr key={employee.id}>
+
+        <td>{employee.id}</td>
+        <td>{employee.firstName}</td>
+        <td>{employee.lastName}</td>
+        <td>{employee.department}</td>
+        <td>{employee.email} </td>
+     
+        </tr>  
+        )
+   
+      })}      
+  {/* <td>{props.firstName} </td>
+        <td>{props.lastName} </td>
+        <td>{props.department} </td>
+        <td>{props.email} </td>
+         */}
     
     
   </tbody>

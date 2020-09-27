@@ -16,7 +16,7 @@ import sampleEmployees from './sampleEmployees.json';
 
 function App(){
 
-
+const [employeeResults] = React.useState(sampleEmployees);
 
   return(
     <div>
@@ -30,7 +30,7 @@ function App(){
   email= {sampleEmployees[0].email}
 /> */}
 
-<Table />
+<Table/>
 
 
 </div>
