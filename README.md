@@ -17,9 +17,9 @@ A Reactjs application that allows the user to easily view a list of their employ
 Within the Terminal type "npm i" or "npm install" to install dependencies to run application on your local machine using Node.
 
 ## Usage:
-to run the application locally type "npm start" into your Terminal. Alternatively a live deployed version of the application can be accessed here: https:/https://dashboard.heroku.com/apps/fathomless-depths-68875
+to run the application locally type "npm start" into your Terminal. Alternatively a live deployed version of the application can be accessed here:  https://jermayy.github.io/EmployeeDirectory/
 
-![](/screenshots/2.png)
+![](/screenshots/1.png)
 
 
 ## License Details:  
