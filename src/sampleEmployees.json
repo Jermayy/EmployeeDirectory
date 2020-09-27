@@ -16,8 +16,60 @@
     {
         "id":3,
         "firstName": "Larry",
-        "lastName": "the Bird",
+        "lastName": "Bird",
         "department": "Engineering",
         "email": "Birdman33@gmail.com"
+    },
+
+    {
+        "id":4,
+        "firstName": "Lebron",
+        "lastName": "James",
+        "department": "Marketing",
+        "email": "KingJames@gmail.com"
+    },
+
+    {
+        "id":5,
+        "firstName": "Masahiro",
+        "lastName": "Sakurai",
+        "department": "Engineering",
+        "email": "KirbyNo.1@gmail.com"
+    },
+
+    {
+        "id":6,
+        "firstName": "Gav",
+        "lastName": "Iscon",
+        "department": "Sales",
+        "email": "WheresGav@gmail.com"
+    },
+    {
+        "id":7,
+        "firstName": "Neo",
+        "lastName": "Politan",
+        "department": "Construction",
+        "email": "IScream@gmail.com"
+    },
+    {
+        "id":8,
+        "firstName": "Bob",
+        "lastName": "TheBuilder",
+        "department": "Construction",
+        "email": "canwefixit@Yahoo.com"
+    },
+    {
+        "id":9,
+        "firstName": "Frank",
+        "lastName": "West",
+        "department": "Marketing",
+        "email": "FrankWestJournalism@gmail.com"
+    },
+    {
+        "id":10,
+        "firstName": "Pat",
+        "lastName": "Common",
+        "department": "Construction",
+        "email": "CommonStealthTank@gmail.com"
     }
 ]
