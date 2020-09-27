@@ -1,10 +1,22 @@
 import React, {Component} from 'react';
 import sampleEmployees from './../sampleEmployees.json'
+import Row from './Row';
 
 
 
+  function Table (){
 
-  function Table (props){
+    const employeeResults = sampleEmployees.map(employee =>{
+        return <Row
+        id= {employee.id}
+        firstName= {employee.firstName}
+        lastName= {employee.lastName}
+        department= {employee.department}
+        email= {employee.email} />
+      })
+      
+
+
 return (
 <div>
     <table className="table">
@@ -19,12 +31,7 @@ return (
   </thead>
   <tbody>
         
-        <td> {props.id} </td>
-        <td>{props.firstName} </td>
-        <td>{props.lastName} </td>
-        <td>{props.department} </td>
-        <td>{props.email} </td>
-        
+   {employeeResults}  
         
     
     
