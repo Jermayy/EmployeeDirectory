@@ -1,49 +1,46 @@
 import React, {Component} from 'react';
+import sampleEmployees from './../sampleEmployees.json'
 
 
-class Table extends Component{
 
-state ={
-    list: []
-}
 
-    render(){
+  function Table (props){
 return (
 <div>
     <table className="table">
   <thead className="thead-dark">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Employee ID</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Department</th>
+      <th scope="col">Email</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+        
+        <td> {props.id} </td>
+        <td>{props.firstName} </td>
+        <td>{props.lastName} </td>
+        <td>{props.department} </td>
+        <td>{props.email} </td>
+        
+        
+    
+    
   </tbody>
 </table>
 </div>
 )
 }
 
-}
+
 
 export default Table;
+
+
+// function Table(props){
+//     return <div className="table">{props.children}</div>
+// }
+
+// export default Table;
